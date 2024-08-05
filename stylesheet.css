@@ -1,0 +1,150 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #a42525;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #b26b6b;
+  text-shadow: 2px 2px #5f3b2c;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.config {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.config th, .config td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.config th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.config td {
+  background-color: #fff;
+  color: #333;
+}
+
+.config td input, .config td button {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.config td input[type="color"] {
+  padding: 0;
+  height: 34px;
+}
+
+.config td input[type="number"] {
+  max-width: 80px;
+}
+
+.config td button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.config td button:hover {
+  background-color: #ff6347;
+}
+
+.config td button:active {
+  background-color: #ff0000;
+}
+
+.config tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.config tr:hover td {
+  background-color: #e0f7fa;
+}
+
+#canvas {
+  margin: 20px 0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fafad2;
+}
+
+table.animation td .current-state {
+  width: 5mm;
+  display: inline-block;
+}
+
+table.animation td .elapsed-time {
+  width: 100px;
+  display: inline-block;
+}
+button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background: linear-gradient(45deg, #32cd32, #228b22);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+button[type="submit"]:active {
+  background: linear-gradient(45deg, #1e7e34, #155724);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+button[type="submit"]:disabled {
+  background: #d3d3d3;
+  color: #a9a9a9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
